@@ -93,7 +93,7 @@ textarea{
 	color: var(--grey);
 }
 
-#new-task-submit, #clear-all-tasks{
+#new-task-submit, #clear-all-ctasks, #clear-all-itasks{
 	color: var(--pink);
 	font-size: 1.25rem;
 	font-weight: 700;
@@ -104,7 +104,7 @@ textarea{
 	transition: 0.4s;
 }
 
-#clear-all-tasks{
+#clear-all-ctasks, #clear-all-itasks{
 	margin-left: 40%;
 }
 
@@ -143,10 +143,11 @@ main {
 	margin-bottom: 1rem;
 }
 
-#donetasks .task .actions .edit, #donetasks .task .actions .delete, #donetasks .task .actions .done{
+#donetasks .task .actions .edit, #donetasks .task .actions .done, #donetasks .task .actions .delete{
 	background-image: linear-gradient(to right, gray, navy);
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
+	display: none;
 }
 
 .task .content {
@@ -154,7 +155,7 @@ main {
 	
 }
 
-.task .content .text {
+.task .content .text, .task .content .date {
 	color: var(--light);
 	font-size: 1.125rem;
 	width: 100%;
@@ -163,7 +164,7 @@ main {
 	
 }
 
-.task .content .text:not(:read-only) {
+.task .content .text:not(:read-only), .task .content .date:not(:read-only) {
 	color: var(--pink);
 }
 
@@ -195,7 +196,7 @@ main {
 	-webkit-text-fill-color: transparent;
 }
 
-.task .actions .delete {
+.task .actions .delete , .task .actions .delete2{
 	color: crimson;
 }
 .task .actions .done{
