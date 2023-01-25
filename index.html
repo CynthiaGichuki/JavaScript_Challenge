@@ -17,10 +17,10 @@
 
             <div class="form-inputs">
                 <input type="text" name="new-task-input" id="new-task-input"
-                    placeholder="What do you have planned for today?" />
-                <textarea rows="10" cols="70" placeholder="Enter task description here "
-                    id="new-task-description"></textarea>
-                <input type="date" id="task-date" name="task-date" />
+                    placeholder="What do you have planned for today?" required/>
+                <textarea rows="7" cols="70" placeholder="Enter task description here "
+                    id="new-task-description" required></textarea>
+                <input type="date" id="task-date" name="task-date" required/>
             </div>
 
             <input type="submit" id="new-task-submit" value="Add task" />
@@ -30,26 +30,26 @@
     </header>
     <main>
         <section class="task_list">
-            <div class="task_container" >
+            <div class="task_container">
                 <h2>Incomplete Tasks</h2>
 
-            <div id="tasks">
-   
-            </div>
-            <input type="submit" id="clear-all-itasks" value="Clear All Incomplete Tasks" />
+                <div id="tasks">
 
-            
+                </div>
+                <input type="submit" id="clear-all-itasks" value="Clear All Incomplete Tasks" />
+
+
 
             </div><br><br>
             <div class="new_list" id="new_list">
-                <h2>Complete Tasks</h2>
+                <h2>Completed Tasks</h2>
                 <div class="donetasks" id="donetasks">
 
 
                 </div>
-                <input type="submit" id="clear-all-ctasks" value="Clear All Complete Tasks" />
+                <input type="submit" id="clear-all-ctasks" value="Clear All Completed Tasks" />
             </div>
-            
+
 
         </section>
     </main>
