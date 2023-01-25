@@ -1,4 +1,4 @@
-# JavaScript_Challenge
+# JavaScript_ToDoList_Challenge
 This is a To-Do list made using JavaSccript, HTML and CSS.
 The To-Do List is able to create a task title, description and due date.
 An incomplete task can be deleted and updated.
