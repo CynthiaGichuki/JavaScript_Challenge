@@ -1,4 +1,4 @@
-:root {
+ :root {
 	--dark: #374151;
 	--darker: #1F2937;
 	--darkest: #111827;
@@ -78,8 +78,12 @@ button {
 
 textarea {
 	margin-top: 20px;
-	border-radius: 10px;
-	background-color: #1F2937;
+	/* border-radius: 10px; */
+	border-color: transparent;
+	/* background-color: #1F2937; */
+	background-color: #111827;
+
+	
 }
 
 #new-task-input {
@@ -148,22 +152,22 @@ main {
 
 #tasks {
 	display: flex;
-	/* flex-wrap: wrap;
-	word-wrap: break-word; */
-}
+	flex-wrap: wrap;
+	word-wrap: break-word; 
+ } 
 
 #tasks .task,
 #donetasks .task {
 	display: flex;
 	justify-content: space-between;
-	/* flex-wrap: wrap; */
+	flex-wrap: wrap; 
 	background-color: var(--darkest);
 	padding: 1rem;
 	border-radius: 1rem;
 	margin-bottom: 1rem;
 }
 
-#donetasks .task .actions .edit,
+ #donetasks .task .actions .edit,
 #donetasks .task .actions .done,
 #donetasks .task .actions .delete {
 	background-image: linear-gradient(to right, gray, navy);
@@ -172,31 +176,31 @@ main {
 	display: none;
 }
 
-.task .content {
+ .task .content {
 	flex: 1 1 0%;
 	
 
-}
-/* .title{
+} 
+ .title{
 	color: var(--light);
 	font-size: 1.125rem;
 	display: inline-block;
 
-} */
+} 
 
-.textlate{
+ .textlate{
 	color: #BA0021;
 }
 .textonTime{
 	color: #EC4899;
-}
+} 
 
 
-.task .content .text {
+ .task .content .text {
 	width: 100%;
 	display: flex;
 
-}
+} 
 
 .task .content .text,
 .task .content .date {
@@ -205,6 +209,7 @@ main {
 	width: 100%;
 	display: flex;
 	flex-wrap: wrap;
+	margin-top: 20px;
 	transition: 0.4s;
 
 }
@@ -251,7 +256,7 @@ main {
 	background-image: linear-gradient(to right, var(--pink), crimson);
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
-}
+} 
 
 /* body{
 	background-color: #1F2937;
@@ -269,4 +274,4 @@ form{
 	width: 50%;
 	height: 50%;
 
-} */
+}  */

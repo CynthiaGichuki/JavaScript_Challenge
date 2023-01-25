@@ -58,7 +58,7 @@ window.addEventListener('load', () => {
 		task_el.appendChild(task_content_el3);
 
 
-		const task_input_el = document.createElement('input');
+		const task_input_el = document.createElement('textarea');
 		task_input_el.classList.add('text');
 		task_input_el.type = 'text';
 		task_content_el.innerText = ("Title:")
@@ -67,7 +67,7 @@ window.addEventListener('load', () => {
 		task_content_el.appendChild(task_input_el);
 
 
-		const task_input_el2 = document.createElement('input');
+		const task_input_el2 = document.createElement('textarea');
 		task_input_el2.classList.add('text');
 		task_input_el2.type = 'text';
 		task_content_el2.innerText = ("Description:")
